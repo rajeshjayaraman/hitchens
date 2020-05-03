@@ -24,10 +24,10 @@ layout: default
 
   <ul class="post-list">
     {% for category in site.categories %}
-    <a href="/category/{{ category }}">
+    <a href="{{ category.permalink }}">
       <div class="post-link__heading">
         <h1 class="post-link__title">
-         {{ category }}
+         {{ category.name }}
         </h1>
       </div>
     </a>
